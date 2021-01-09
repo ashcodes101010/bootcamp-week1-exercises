@@ -1,6 +1,5 @@
 const assert = require('assert')
 
-
 /**
  * Complete the function such that it returns true if an object or any of its
  * subobjects have any falsy values and false otherwise.
@@ -10,6 +9,17 @@ const assert = require('assert')
  */
 
 const hasFalsyValue = obj => {
+  const values = Object.values(obj);
+
+  for (i = 0; i < values.length; i++) {
+    if (!values[i]) {
+      return true;
+    }
+    if (typeof values[i] === 'object') {
+      return hasFalsyValue(values[i]);
+    }
+  }
+ return false;
 };
 
 const falsyObj = {

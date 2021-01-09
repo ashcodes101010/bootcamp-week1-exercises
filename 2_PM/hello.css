@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+#first {
+    color: #e09494;
+}
+
+h2 {
+    color: red;
+}
+
+h1, button {
+    color: darkred;
+}

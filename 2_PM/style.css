@@ -1,0 +1,56 @@
+ol, ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+li + li {
+    margin-top: 10px;
+}
+
+h1, h2 {
+    color: #89b389;
+}
+
+.med-space {
+    margin-top: 50px;
+}
+
+html, body {
+    height: 100%;
+}
+
+table, td, th {
+    border: 1px solid black;
+  }
+  
+table {
+    width: 700px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+body {
+    text-align: center;
+    background-color: #fff1f3;
+}
+
+.social > a {
+    color: black;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+#socials {
+    background-color: #cfeacf;
+    padding: 30px;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}

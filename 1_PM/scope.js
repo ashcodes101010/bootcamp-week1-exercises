@@ -1,8 +1,9 @@
 /**
  * Part 1:
  *    What will print and why?
+ * - 1, 2, undefined (order + scope  scope reasons)
  *    What will change if we delete line 15? Why?
- * 
+ * - error since there will be no function x to be called (also hanging closed curly brace)
  * Part 2:
  *    Change to ES6 syntax (use arrow functions and change var to let).
  * 
@@ -11,17 +12,17 @@
  *        console logs.
  */
 
-function x() {
-  var a;
+const x = () => {
+  let a = 2;
   console.log(a);
 }
 
-function y() {
-  var a = 2;
+const y = () => {
+  let a = 2;
   console.log(a);
   x();
 }
 
-var a = 1;
+let a = 1;
 console.log(a);
 y();

@@ -16,9 +16,9 @@ To run the App, first install the required dependencies with `npm i`. Then, just
 
 Before we start coding, we should plan out how we want our app to look. An example Personal Assistant is up [here!](https://pkpbynum.github.io/personal-assistant-example/) For now, however, think about implementing only the Todos page with the following functionality:
 
-1. Keep a list of todos (just a simple string description)
-2. Add todos to a list
-3. Delete todos once they have been added
+1. Keep a list of todos (just a simple string description) DONE
+2. Add todos to a list DONE
+3. Delete todos once they have been added DONE
 4. Search through Todos by substring
 
 Here are some more details:
