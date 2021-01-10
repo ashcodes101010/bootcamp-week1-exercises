@@ -5,7 +5,7 @@ import { TextInput } from './styles'
 const FormInput = ({ type, placeholder, value, setValue }) => {
   
     const searchChange = e => {
-      setValue({ 'searchList': value.todoList.filter(({ todo }) => todo.includes(e.target.value))})
+      setValue({ 'searchList': value.todoList.filter(({ todo }) => todo.toLowerCase().includes(e.target.value.toLowerCase()))})
       setValue({ 'searchTerm': e.target.value })
     }
   
