@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { Link } from 'react-router-dom'
 
 export const Delete = styled.button`
     width: 23px;
@@ -20,5 +20,16 @@ export const Delete = styled.button`
         opacity: 1;
         color: crimson;
         font-size: 25px;
+    }
+`
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: #63737d;
+    transition: color 0.15s, font-size 0.15s;
+
+    &:hover {
+        color: #5f819e;
+        font-size: 33px;
     }
 `

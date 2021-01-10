@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const Todos = styled.div`
     font-size: 30px;
     text-align: center;
+    overflow-wrap: break-word;
 
     ul {
         display: inline-block; 

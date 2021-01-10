@@ -9,7 +9,7 @@ export const MainButton = styled.button`
     transition: background-color 0.12s, width 0.12s ease-in, height 0.12s ease-in;
     transition-delay: 0.12s;
     border-radius: 10px;
-    border: solid #88b598 1px;
+    border: outset #88b598 2px;
 
     &:hover {
         width: 105px;

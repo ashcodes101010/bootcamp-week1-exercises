@@ -36,7 +36,7 @@ const Todo = () => {
         <InputGroup>
           <FormInput type='add' value={item} setValue={setItem} placeholder='To-do item' />
           <FormButton action={() => { item.todo.trim() !== '' && 
-                      setItem({ 'todoList': item.todoList.concat({key: nanoid(), todo: item.todo.trim()})}); 
+                      setItem({ 'todoList': item.todoList.concat({key: nanoid(), todo: item.todo.trim(), desc: ''})}); 
                       setItem({'todo': ('') })}} button='Add' />
         </InputGroup>
         <FormInput type='search' value={item} setValue={setItem} placeholder='Search for specific tasks' />
