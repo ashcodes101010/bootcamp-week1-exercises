@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useReducer, useEffect } from 'react'
 import { AllTodoInputs, InputGroup, Title } from './styles'
 import FormButton from './components/FormButton/formButton'
 import FormInput from './components/FormInput/formInput'
@@ -9,8 +9,12 @@ const reducer = (prevState, payload) => ({ ...prevState, ...payload })
 
 const Todo = () => {
   const [item, setItem] = useReducer(reducer, 
-    {todoList: [], searchList: [], searchTerm: '', todo: ''})
+    {todoList: JSON.parse(localStorage.getItem('todoList')) || [], searchList: [], 
+    searchTerm: '', todo: ''})
 
+  useEffect(() => {
+    localStorage.setItem('todoList', JSON.stringify(item.todoList))
+  }, [item.todoList])
 
   const todos = () => {
     if (item.todoList.length === 0) {
