@@ -1,8 +1,8 @@
 import React, { useReducer, useEffect } from 'react'
 import { AllTodoInputs, InputGroup, Title } from './styles'
-import FormButton from './components/FormButton/formButton'
-import FormInput from './components/FormInput/formInput'
-import TodoList from './components/TodoList/TodoList'
+import FormButton from './components/FormButton'
+import FormInput from './components/FormInput'
+import TodoList from './components/TodoList'
 import { nanoid } from 'nanoid'
 
 const reducer = (prevState, payload) => ({ ...prevState, ...payload })

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Title } from '../Todo/styles'
 import { Welcome, Loading, StyledLink } from './styles'
-import Weather from "./components/Weather/weather"
+import Weather from "./components/Weather"
 
 const Greeting = () => {
     const [weather, setWeather] = useState('')

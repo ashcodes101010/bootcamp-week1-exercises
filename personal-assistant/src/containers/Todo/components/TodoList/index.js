@@ -1,6 +1,6 @@
 import React from 'react'
 import { Todos } from './styles'
-import TodoItem from './components/TodoItem/TodoItem'
+import TodoItem from './components/TodoItem'
 
 
 const TodoList = props => {
